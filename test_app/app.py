@@ -1,7 +1,7 @@
 import flet
 import os
 from flet import IconButton, Page, Row, TextField, icons
-DEFAULT_FLET_PORT = 80
+DEFAULT_FLET_PORT = 8502
 
 def main(page: Page):
     page.title = "Flet counter example"
