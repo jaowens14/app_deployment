@@ -1,0 +1,10 @@
+version: '2'
+services:
+  test_app:
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: .
+    environment:
+      - VIRTUAL_HOST=localhost:6000
+      - LETSENCRYPT_HOST=localhost:6000
