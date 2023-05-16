@@ -1,6 +1,9 @@
 FROM nginx:latest
 
-COPY nginx.conf /etc/nginx/sites-available/nginx.conf
+
+RUN rm /etc/nginx/conf.d/default.conf
+
+COPY nginx.conf /etc/nginx/nginx.conf
 
 COPY index.html /usr/share/nginx/html/index.html
 
