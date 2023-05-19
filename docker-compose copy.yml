@@ -4,5 +4,10 @@ services:
   app:
     container_name: test_app
     build: test_app
+  nginx:
+    container_name: nginx
+    build: nginx
     ports:
-      - 8502:8502
+      - 80:80
+    depends_on:
+      - app
