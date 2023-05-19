@@ -1,7 +1,6 @@
 import flet
 import os
 from flet import IconButton, Page, Row, TextField, icons
-DEFAULT_FLET_PORT = 80
 
 def main(page: Page):
     page.title = "Flet counter example"
@@ -29,6 +28,4 @@ def main(page: Page):
     )
 
 
-flet_port = int(os.getenv("FLET_PORT", DEFAULT_FLET_PORT))
-
-flet.app(target=main, view=flet.WEB_BROWSER, port=80)
+flet.app(target=main, view=flet.WEB_BROWSER, port=8502)
