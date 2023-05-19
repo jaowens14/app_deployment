@@ -11,5 +11,5 @@ COPY . .
 
 CMD ["python3", "app.py"]
 
-EXPOSE 8502
+EXPOSE 80
 
