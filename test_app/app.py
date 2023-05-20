@@ -27,5 +27,4 @@ def main(page: Page):
         )
     )
 
-
 flet.app(target=main, view=flet.WEB_BROWSER, port=8502)
