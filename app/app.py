@@ -1,6 +1,7 @@
 import flet
 import os
 from flet import IconButton, Page, Row, TextField, icons
+import controls
 
 def main(page: Page):
     page.title = "Flet counter example"
